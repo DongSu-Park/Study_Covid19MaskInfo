@@ -42,9 +42,8 @@ dependencies {
     // Retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
-    // Moshi
-    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.7'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
