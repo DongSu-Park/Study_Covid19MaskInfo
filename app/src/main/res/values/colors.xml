@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 마스크 재고에 따른 색상 값 변경   -->
+    <!-- 100개 이상(녹색): 'plenty' / 30개 이상 100개미만(노랑색): 'some' /
+        2개 이상 30개 미만(빨강색): 'few' / 1개 이하(회색): 'empty' / 판매중지(검정): 'break'  -->
+    <color name="mask_remain_plenty_green">#FF008000</color>
+    <color name="mask_remain_some_yellow">#FFFFD700</color>
+    <color name="mask_remain_few_red">#FFFF0000</color>
+    <color name="mask_remain_empty_gray">#FF808080</color>
+    <color name="mask_remain_break_black">#FF000000</color>
+
 </resources>

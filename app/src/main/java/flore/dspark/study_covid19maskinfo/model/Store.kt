@@ -16,23 +16,26 @@ import com.google.gson.annotations.SerializedName
  *  type = 판매처 유형 (번호에 따른 판매처 유형이 다름)
  *      약국: '01', 우체국: '02', 농협: '03'*/
 
+/** 추가 작업 사항
+ *  백업용 json 에서 null 값으로 인한 null Safety 적용 */
+
 data class Store(
     @SerializedName(value = "addr")
-    val address: String,
+    val address: String?,
     @SerializedName(value = "code")
-    val code: String,
+    val code: String?,
     @SerializedName(value = "created_at")
-    val createdAt: String,
+    val createdAt: String?,
     @SerializedName(value = "lat")
-    val lat: Double,
+    val lat: Double?,
     @SerializedName(value = "lng")
-    val lng: Double,
+    val lng: Double?,
     @SerializedName(value = "name")
-    val name: String,
+    val name: String?,
     @SerializedName(value = "remain_stat")
-    val remainStat: String,
+    val remainStat: String?,
     @SerializedName(value = "stock_at")
-    val stockAt: String,
+    val stockAt: String?,
     @SerializedName(value = "type")
-    val type: String
+    val type: String?
 )

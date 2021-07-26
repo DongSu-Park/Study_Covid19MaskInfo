@@ -1,7 +1,7 @@
 package flore.dspark.study_covid19maskinfo
 
 import flore.dspark.study_covid19maskinfo.model.StoreInfo
-import flore.dspark.study_covid19maskinfo.repository.MaskService
+import flore.dspark.study_covid19maskinfo.repository.StoreInfoAPI
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -25,10 +25,10 @@ class ExampleUnitTest {
     fun retrofitTest(){
         // Retrofit api builder 객체
         val retrofit = Retrofit.Builder()
-            .baseUrl(MaskService.BASE_URL)
+            .baseUrl(StoreInfoAPI.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        val service: MaskService = retrofit.create(MaskService::class.java)
+        val service: StoreInfoAPI = retrofit.create(StoreInfoAPI::class.java)
 
         // Retrofit call 요청 객체
         val storeInfoCall : Call<StoreInfo> = service.fetchStoreInfo()

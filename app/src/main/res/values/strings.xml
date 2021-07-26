@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Study_Covid19MaskInfo</string>
+    <string name="tv_store_name">약국 이름이 들어갈 자리</string>
+    <string name="tv_store_address">약국 주소가 들어갈 자리</string>
+    <string name="tv_store_distance">X.x Km</string>
+
+    <!-- 마스크 재고 상황에 따른 string 값 정의   -->
+    <string name="tv_store_mask_remainState_plenty">충분\n100개 이상</string>
+    <string name="tv_store_mask_remainState_some">여유\n30개 이상</string>
+    <string name="tv_store_mask_remainState_few">적음\n2개 이상</string>
+    <string name="tv_store_mask_remainState_empty">재고없음</string>
+    <string name="tv_store_mask_remainState_break">판매중단</string>
 </resources>
